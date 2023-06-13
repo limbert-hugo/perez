@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function libro (ti,au,ur,pag)
+        {
+            this.titulo = ti;
+            this.autor = au;
+            this.url = ur;
+            this.pagina= pag;
+        }
+        function imprimir (o)
+        {
+            document.write( ' titulo: '+ o.titulo  + ' autor: '+ o.autor + ' url:'  + o.url + ' paginas: ' + o.pagina);
+        }
+        var pigpig = new libro(' pepa pig ', ' jaimito  ',' pepita.com', 250 );
+        
+        imprimir(pigpig);
+
+    </script>
+    <style>
+        body {
+            background-color: rgb(163, 89, 138);
+            font-size: 20px;
+        }
+    </style>
+</body>
+</html>
